@@ -1,0 +1,23 @@
+.heading {
+  line-height: 100%;
+
+  &--L-bold {
+    font-size: 64px;
+    font-weight: 500;
+  }
+
+  &--L-regular {
+    font-size: 64px;
+    font-weight: 300;
+  }
+
+  &--M {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  &--S {
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
