@@ -1,7 +1,7 @@
 .text {
-  font-size: 12px;
+  font-size: 1.25em;
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 300;
 
   &--M {
     font-style: normal;
@@ -9,5 +9,6 @@
 
   &--S {
     font-style: italic;
+    color: var(--clr-text-2);
   }
 }

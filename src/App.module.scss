@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 97px;
+}
+
+.switch {
+  margin-left: auto;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}

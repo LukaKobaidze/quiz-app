@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question {
+  max-width: 465px;
+  display: flex;
+  flex-direction: column;
+
+  &Heading {
+    margin-top: 27px;
+    margin-bottom: 24px;
+  }
+
+  &ProgressBar {
+    margin-top: auto;
+    margin-bottom: 112px;
+  }
+}
+
+.options {
+  max-width: 564px;
+
+  & > *:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
