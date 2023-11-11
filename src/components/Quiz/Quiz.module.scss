@@ -22,6 +22,8 @@
 
 .options {
   max-width: 564px;
+  width: 140%;
+  margin-left: 30px;
 
   & > *:not(:last-child) {
     margin-bottom: 24px;

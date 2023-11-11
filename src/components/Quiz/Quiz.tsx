@@ -16,6 +16,11 @@ export default function Quiz(props: Props) {
   const [questionIndex, setQuestionIndex] = useState(0);
 
   const currentQuestion = data.questions[questionIndex];
+
+  const handleOptionSelect = (optionIndex: number) => {
+    setQuestionIndex((state) => state + 1);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.question}>
@@ -26,7 +31,10 @@ export default function Quiz(props: Props) {
           {currentQuestion.question}
         </Heading>
 
-        <ProgressBar className={styles.questionProgressBar} progress={(questionIndex / data.questions.length) * 100} />
+        <ProgressBar
+          className={styles.questionProgressBar}
+          progress={(questionIndex / data.questions.length) * 100}
+        />
       </div>
       <form className={styles.options}>
         {currentQuestion.options.map((option, index) => (
@@ -36,8 +44,10 @@ export default function Quiz(props: Props) {
             box={String.fromCharCode(97 + index).toUpperCase()}
             value={option}
             name="quiz-option"
+            onClick={() => handleOptionSelect(index)}
           />
         ))}
+        
       </form>
     </div>
   );
