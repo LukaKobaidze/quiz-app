@@ -23,6 +23,7 @@ export default function App() {
   return (
     <>
       <Background />
+
       <header className={styles.header}>
         {quizSubjectData && (
           <Select
@@ -38,6 +39,7 @@ export default function App() {
           onSwitch={handleToggleTheme}
         />
       </header>
+      
       <main className={styles.main}>
         {quizSubjectData ? (
           <Quiz data={quizSubjectData} />

@@ -1,14 +1,22 @@
 .text {
-  font-size: 1.25em;
-  line-height: 150%;
-  font-weight: 300;
-
   &--M {
+    line-height: 150%;
+    font-weight: 300;
+    font-size: 1.25em;
     font-style: normal;
   }
 
   &--S {
+    line-height: 150%;
+    font-weight: 300;
+    font-size: 1.25em;
     font-style: italic;
     color: var(--clr-text-2);
+  }
+
+  &--display {
+    font-size: 9em;
+    font-weight: 500;
+    line-height: 100%;
   }
 }

@@ -3,7 +3,7 @@ import styles from './Text.module.scss';
 interface Props
   extends React.HTMLAttributes<HTMLParagraphElement | HTMLSpanElement> {
   as: 'span' | 'p';
-  variant: 'M' | 'S';
+  variant: 'M' | 'S' | 'display';
 }
 
 export default function Text(props: Props) {
